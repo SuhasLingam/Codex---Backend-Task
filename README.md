@@ -2,6 +2,10 @@
 
 A scalable ticket booking system built with Node.js, Express.js, and PostgreSQL (Supabase) for handling concurrent bookings efficiently.
 
+## Live Demo
+
+API is deployed at: [https://codex-backend-task.onrender.com](https://codex-backend-task.onrender.com)
+
 ## Features
 
 - Show management (create shows with seats)
@@ -78,6 +82,7 @@ bun run index.js
     }
   }
   ```
+  ![Create Show API Example](api-add-shows.png)
 
 ### User Routes
 
@@ -96,6 +101,7 @@ bun run index.js
     }
   ]
   ```
+  ![Get All Shows API Example](api-shows.png)
 
 #### Book Seats
 
@@ -120,6 +126,7 @@ bun run index.js
     }
   }
   ```
+  ![Book Seats API Example](api-book-shows.png)
 
 ## Technical Implementation
 
@@ -150,14 +157,16 @@ The API returns appropriate HTTP status codes:
 - 404: Not Found
 - 500: Internal Server Error
 
+## Database Snapshots
+
+### Bookings Table
+
+![Bookings Table Screenshot](bookings-table.png)
+
+### Shows Table
+
+![Shows Table Screenshot](shows-table.png)
+
 ## Technical Design
 
 For detailed technical design and architecture, please refer to [TECHNICAL_DESIGN.md](./TECHNICAL_DESIGN.md)
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a new Pull Request
